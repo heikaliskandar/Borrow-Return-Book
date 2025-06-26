@@ -1,43 +1,61 @@
-Step 1: Download the Project
-Visit the GitHub repository:
-https://github.com/heikaliskandar/borrow-return-book
+# 📚 Borrow & Return Book System – Installation Guide
 
-Click the green “Code” button.
+This project is a simple PHP-based system for borrowing and returning books, suitable for library use.
 
-Select “Download ZIP”.
+---
 
-After download completes, extract the ZIP file.
+### ✅ Step 1: Download the Project
 
-Step 2: Move to XAMPP htdocs Folder
-Copy the extracted folder (e.g., borrow-return-book) to:
-C:\xampp\htdocs
+Visit the GitHub repository:  
+[https://github.com/heikaliskandar/borrow-return-book](https://github.com/heikaliskandar/borrow-return-book)
+
+1. Click the green **“Code”** button  
+2. Select **“Download ZIP”**  
+3. After download completes, **extract** the ZIP file
+
+---
+
+### ✅ Step 2: Move to XAMPP `htdocs` Folder
+
+Copy the extracted folder (e.g., `borrow-return-book`) to the following path:
+
 
 Your final path should look like:
-C:\xampp\htdocs\borrow-return-book
 
-Step 3: Import the Database
-Open XAMPP Control Panel, then:
 
-Start Apache
-Start MySQL
+---
 
-Go to your browser and open:
+### ✅ Step 3: Import the Database
+
+1. Open **XAMPP Control Panel**
+2. Start **Apache** and **MySQL**
+3. Open your browser and go to:
+
 http://localhost/phpmyadmin
 
+4. Click the **Import** tab  
+5. Choose the file `library.sql` from the project folder  
+6. Click **Go** to import
 
-Step 4: Check connectdb.php
-Open the file:
+---
 
-C:\xampp\htdocs\borrow-return-book\connectdb.php
-Make sure it looks like this:
+### ✅ Step 4: Check `connectdb.php`
+
+Navigate to:
 
 
+Make sure the content is as below:
+
+```php
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "library";
-
-Step 5: Run the Project
-Open browser and go to:
+?>
 
 http://localhost/borrow-return-book
+
+
+Let me know if you'd like to add screenshots, badges, or a "Features" section as well.
+
